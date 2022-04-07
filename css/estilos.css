@@ -42,12 +42,15 @@ h4 {
   background: black;
   font-size: 40px;
 }
+.menuIndex:hover{
+  font-size: 54px;
+}
 ul li a {
   color: darkorange;
   text-decoration: none;
 }
 #imagenIndex {
-  width: 85%;
+  width: 80%;
   display: flex;
   margin: auto;
 }
@@ -58,6 +61,9 @@ ul li a {
   padding: 30px;
   margin: 0;
   color: yellow;
+}
+.parrafos:hover{
+  font-size: 22px;
 }
 .parrafos__historia {
   text-align: center;
@@ -83,6 +89,18 @@ ul li a {
   width: 30%;
   padding: 10px;
   margin: auto;
+}
+.galeriaFoto:hover{
+  width: 40%;
+  margin: auto;
+}
+.seccionDisco{
+  display: flex;
+  flex-direction: column;
+}
+.imagenDisco{
+  width: 580px;
+  height: 580px;
 }
 .infoContacto {
   text-align: center;
