@@ -97,10 +97,17 @@ ul li a {
 .seccionDisco{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .imagenDisco{
-  width: 580px;
-  height: 580px;
+  width: 700px;
+  height: 620px;
+}
+.contDisco{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 950px;
 }
 .infoContacto {
   text-align: center;
