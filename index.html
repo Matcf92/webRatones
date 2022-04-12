@@ -9,10 +9,10 @@
     <title>Ratones Paranoicos Pagina Principal</title>
   </head>
   <body>
-    <div class="containerIndex">
-      <div class="tituloIndex">
-        <img src="images/logo.jpg" class="logoIndex" alt="logo">
-        <h1>Ratones Paranoicos</h1>
+    <div class="containerIndex container-fluid">
+      <div class="tituloIndex row">
+        <img src="images/logo.jpg" class="logoRaton col-6" alt="logo">
+        <h1 class="tituloDisco col-6">Ratones Paranoicos</h1>
       </div>
       <div class="navIndex">
         <nav>
@@ -25,16 +25,18 @@
           </ul>
         </nav>
       </div>
-      <div class="div1Noticias">
+      <div class="div1Noticias container-fluid">
         <main>
-        <h2>Noticias de la Banda</h2>
-        <img src="images/recital1.jpg" id="imagenIndex" alt="Imagen del recital" />
-        <p class="parrafos">
+        <div class="caja1 row">
+          <div class="col-6">
+          <h2>Noticias de la Banda</h2>
+          <img src="images/recital1.jpg" id="imagenIndex" alt="Imagen del recital" />
+          <p class="parrafos">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
           officiis ab, odit enim est minima eveniet ducimus, impedit ex
           praesentium facilis pariatur tempora illo nostrum provident laborum.
           Eos dolorem quasi vitae nesciunt totam itaque, beatae omnis
-          blanditiis! Iusto animi, dolores reprehenderit delectus odit
+          blanditiis! Iusto animi, dolores reprehenderit delectus odi
           incidunt ullam debitis quaerat aspernatur nam voluptatem pariatur
           beatae voluptate sapiente, quod dignissimos rem nobis! Quidem
           quibusdam vitae deserunt ut fugiat unde ad, delectus earum quia vel
@@ -59,12 +61,12 @@
           eius, quos sunt cum error accusamus, voluptatibus tempore. Neque,
           fuga quas aut nesciunt voluptate dolorum soluta obcaecati
           consequuntur non officiis dignissimos molestias ipsum repellat illo.
-        </p>
-        </div>
-        <div class="div2Gira">
-        <h2>Gira 2022-23</h2>
-        <img src="images/gira.jpg" id="imagenIndex" alt="Imagen de la gira" />
-        <p class="parrafos">
+          </p>
+          </div>
+          <div class="div2Gira col-6">
+          <h2>Gira 2022-23</h2>
+          <img src="images/gira.jpg" id="imagenIndex" alt="Imagen de la gira" />
+          <p class="parrafos">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
           explicabo molestiae, repellendus consequatur aspernatur recusandae
           eos animi laudantium deserunt sed quia dignissimos praesentium nisi
@@ -94,16 +96,12 @@
           exercitationem molestias nemo officia reprehenderit voluptatem autem
           delectus quam. Laboriosam earum temporibus ut omnis dignissimos ea.
           Perferendis doloremque fugit tempore cupiditate soluta qui sunt
-          rerum odio, architecto hic voluptate exercitationem tempora vel.
-          Soluta, optio velit maxime voluptatibus suscipit culpa deleniti
-          asperiores, cum eligendi unde blanditiis fuga alias! Consectetur
-          quaerat quis blanditiis incidunt, iusto libero, ducimus rerum minima
-          alias ratione amet ad nulla voluptatibus non voluptas officia
-          aspernatur aliquid delectus sunt quo a! Rerum et repudiandae
-          molestiae fugiat quae quo unde omnis?
-        </p>
-      </div>
-      <div class="div3Lanzamientos">
+          rerum odio, architecto hic voluptate.
+          </p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="div3Lanzamientos col-6">
         <h2>Proximos lanzamientos</h2>
         <img src="images/nuevo.jpg" id="imagenIndex" alt="Tapa del nuevo disco" />
         <p class="parrafos">
@@ -136,9 +134,18 @@
           exercitationem modi quod neque similique quo?
         </p>
       </div>
+      <div class="div4Random col-6">
+        <h2>Titulo</h2>
+        <img src="images/merchandise.jpg" id="imagenIndex" alt="merchandise">
+        <p class="parrafos">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto saepe quam quisquam optio repellendus tempore sunt, mollitia animi labore inventore hic delectus nesciunt corporis, laudantium, minus voluptas qui architecto! Illo beatae fugit quo aperiam ad reprehenderit, ut quae magni voluptates quaerat recusandae expedita quam, dolorem natus sit quasi. Quibusdam, repellendus.
+        </p>
       </div>
-      <div class="footerIndex">
-        <iframe
+      </div>
+      </main>
+      <div class="footerIndex row">
+        <h4 class="col-4">Todos los derecchos Reservados. Ratones Paranoicos 2022</h4>
+        <iframe class="col-4"
         style="border-radius: 12px"
         src="https://open.spotify.com/embed/artist/5fVtUielMhdztOA34ArB6c?utm_source=generator"
         width="100%"
@@ -147,7 +154,11 @@
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </iframe>
-      <h4>Todos los derecchos Reservados. Ratones Paranoicos 2022</h4>
+        <div class="col-4 redesSociales">
+          <h4>Seguinos:</h4>
+          <a href="https://www.facebook.com/ratonesparanoicos"><img src="images/facebook.png" width="40px" height="40px" class="iconFacebook"></a>
+        </div>
+      
       </div>
     </div>
     <script src="js/bootstrap.min.js"></script>

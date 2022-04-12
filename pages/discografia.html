@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>Discografia de los Ratones Paranoicos</title>
   </head>
   <body>
-    <header>
-      <img src="../images/logo.jpg" alt="logo">
-      <h1>Ratones Paranoicos</h1>
+    <div class="container-fluid">
+    <header class="row">
+      <img src="../images/logo.jpg" class="col-6 logoRaton" alt="logo">
+      <h1 class="tituloDisco col-6">Ratones Paranoicos</h1>
     </header>
-    <nav>
+    <nav class="row">
       <ul class="menuIndex">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="historia.html">Historia</a></li>
@@ -22,12 +24,12 @@
       </ul>
     </nav>
     <main>
-      <section class="seccionDisco">
+      <section class="seccionDisco row">
         <h2>Discografia</h2>
-        <article class="contDisco">
+        <article class="contDisco col-4">
           <h3>1986 Ratones Paranoicos</h3>
           <img
-            src="../images/ratones-paranoicos-ratones-paranoicos.png" class="imagenDisco"
+            src="../images/ratones-paranoicos-ratones-paranoicos.png" class="imagenDisco img-thumbnail"
             alt="Tapa Ratones Paranoicos"
           />
           <p class="parrafos">
@@ -49,10 +51,10 @@
             1995, en la recopilación de outtakes y rarezas "Raros Ratones".
           </p>
         </article>
-        <article class="contDisco">
+        <article class="contDisco col-4">
           <h3>1988 Los Chicos quieren Rock</h3>
           <img
-            src="../images/ratones-paranoicos-los-chicos-quieren-rock.png" class="imagenDisco"
+            src="../images/ratones-paranoicos-los-chicos-quieren-rock.png" class="imagenDisco img-thumbnail"
             alt="Tapa Quieren Rock"
           />
           <p class="parrafos">
@@ -90,10 +92,10 @@
             del mundo.”
           </p>
         </article>
-        <article class="contDisco">
+        <article class="contDisco col-4">
           <h3>1992 Extasis Vivo</h3>
           <img
-            src="../images/ratones-paranoicos-extasis-vivo.png" class="imagenDisco"
+            src="../images/ratones-paranoicos-extasis-vivo.png" class="imagenDisco img-thumbnail"
             alt="tapa extasis"
           />
           <p class="parrafos">
@@ -105,8 +107,10 @@
         </article>
       </section>
     </main>
-    <footer>
-      <iframe
+    </div>
+    <footer class="row">
+      <h4 class="col-4">Todos los derecchos Reservados. Ratones Paranoicos 2022</h4>
+      <iframe class="col-4"
         style="border-radius: 12px"
         src="https://open.spotify.com/embed/artist/5fVtUielMhdztOA34ArB6c?utm_source=generator"
         width="100%"
@@ -116,7 +120,11 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       >
       </iframe>
-      <h4>Todos los derecchos Reservados. Ratones Paranoicos 2022</h4>
+      <div class="col-4 redesSociales">
+        <h4>Seguinos:</h4>
+        <a href="https://www.facebook.com/ratonesparanoicos"><img src="../images/facebook.png" width="40px" height="40px" class="iconFacebook"></a>
+      </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
