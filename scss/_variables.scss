@@ -1,2 +1,21 @@
 $colorPrincipal: black;
 $colorSecundario: gold;
+$colorTerciario: darkgrey;
+
+$parrafos:(
+    tFuente: 21px,
+    cFuente: green,
+    tAlign: left,
+);
+
+$titulos:(
+    tH1: 60px,
+    tH2: 50px,
+    tH3: 40px,
+    tH4: 30px,
+);
+
+@mixin fotoSize($height, $width){
+    height: $height;
+    width: $width;
+}

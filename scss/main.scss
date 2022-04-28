@@ -1,3 +1,5 @@
+@import "variables";
+
 .containerHistoria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -59,7 +61,7 @@
   }
   .contenido {
     grid-area: contenido;
-    background-color: gray;
+    background-color: $colorTerciario;
   }
   .contenido p {
     font-size: 18px;
@@ -104,12 +106,7 @@
   }
 }
 body{
-    background-color: black;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    background-color: $colorPrincipal;
 }
 .header {
     display: flex;
@@ -124,6 +121,10 @@ body{
         align-content: center;
     }
   }
+.header{
+  @extend .header;
+  background-color: $colorTerciario;
+}  
 .menuIndex {
     color: yellow;
     display: flex;
@@ -145,20 +146,23 @@ body{
     background-color: maroon;
     h2{
         text-align: center;
-        font-size: 32px;
+        font-size: map-get($map: $titulos, $key: tH2);
         color: yellow;
         padding-top: 23px;
     }
     p{
         padding: 8px;
-        font-size: 19px;
+        font-size: map-get($map: $parrafos, $key: tFuente);
         font-weight: 600;
-        text-align: center;
-        color: black;
+        text-align: map-get($map: $parrafos, $key: tAlign);
+        color: map-get($map: $parrafos, $key: cFuente);
         &:hover{
             color: red;
         }
     }
+}
+.imgHist{
+  @include fotoSize(auto,1200px)
 }
 .contenidoFooter{
     display: flex;
@@ -168,5 +172,6 @@ body{
     justify-content: space-around;
     h4{
         color: gold;
+      font-size: map-get($map: $titulos, $key: tH4);
     }
 }
