@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ratones, paranoicos, rock, historia, discografia, juanse, memi, sarco, argentina, musica">
     <meta name="description" content="Galeria de fotos de la banda de Rock mas grande de la argentina, los Ratones Paranoicos">
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--<link rel="stylesheet" href="../css/estilos.css" />-->
     <title>GaleriaRatones Paranoicos</title>
 </head>
-<body>
-    <header class="header">
-        <img src="../images/logo.jpg" alt="logo">
-        <h1>Ratones Paranoicos</h1>
+<body class="container-fluid">
+    <header class="header row">
+        <img class="logoRaton col-sm-12 col-md-6 col-xl-6" src="../images/logo.jpg" alt="logo">
+        <h1 class="col-sm-12 col-md-6 col-xl-6">Ratones Paranoicos</h1>
     </header>
-    <nav>
+    <nav class="row">
         <ul class="menuIndex">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="historia.html">Historia</a></li>
@@ -24,9 +26,9 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="row">
         <h2>Galeria de Fotos</h2>
-        <div class="galeria">
+        <div class="galeria col-sm-12 col-md-12 col-xl-12">
             <img src="../images/galeria1.jpg" class="galeriaFoto" alt="Imagen Ratones">
             <img src="../images/galeria2.jpg" class="galeriaFoto" alt="Imagen Ratones">
             <img src="../images/galeria3.jpg" class="galeriaFoto" alt="Imagen Ratones">
@@ -35,14 +37,17 @@
             <img src="../images/galeria6.jpg" class="galeriaFoto" alt="Imagen Ratones">
         </div>
     </main>
-    <footer>
-        <iframe style="border-radius:12px"
+    <footer class="contenidoFooter footerAll row">
+        <h4 class="col-sm-12 col-md-4 col-xl-4">Todos los derechos Reservados. Ratones Paranoicos 2022</h4>
+        <iframe class="col-sm-12 col-md-4 col-xl-4" style="border-radius:12px"
         src="https://open.spotify.com/embed/artist/5fVtUielMhdztOA34ArB6c?utm_source=generator" width="100%"
         height="80" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
         </iframe>
-        <h4>Todos los derechos Reservados. Ratones Paranoicos 2022</h4>
-        </footer>
+        <div class="redesSociales col-sm-12 col-md-4 col-xl-4">
+            <h4>Seguinos:</h4>
+            <a href="https://www.facebook.com/ratonesparanoicos"><img src="../images/facebook.png" width="40px" height="40px" class="iconFacebook"></a>
+        </div>
+    </footer>
 </body>
-
 </html>

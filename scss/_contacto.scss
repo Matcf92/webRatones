@@ -1,0 +1,21 @@
+.infoContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formContacto {
+    background-color: orangered;
+    width: 365px;
+    height: 465px;
+    margin: auto;
+    text-align: center;
+    font-size: 27px;
+    color: yellow;
+  }
+  .controls {
+    display: block;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+  }

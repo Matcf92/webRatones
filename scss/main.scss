@@ -1,110 +1,7 @@
 @import "variables";
+@import "discografia";
+@import "contacto";
 
-.containerHistoria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.1fr auto 0.3fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "titulo titulo titulo titulo"
-    "nav nav nav nav"
-    ". contenido contenido ."
-    ". footer footer .";
-}
-.titulo {
-  grid-area: titulo;
-  display: block;
-  margin: 0%;
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.contenido {
-  grid-area: contenido;
-  width: 1200px;
-}
-#imagenHistoria {
-  width: 85%;
-  display: flex;
-  margin: auto;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 768px) {
-  .containerHistoria {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "titulo titulo titulo"
-      "nav nav nav"
-      "contenido contenido contenido"
-      "footer footer footer";
-  }
-  .titulo {
-    grid-area: titulo;
-  }
-  .titulo h1 {
-    font-size: 30px;
-  }
-  .nav {
-    grid-area: nav;
-  }
-  .nav ul {
-    flex-direction: row;
-    font-size: 24px;
-  }
-  .contenido {
-    grid-area: contenido;
-    background-color: $colorTerciario;
-  }
-  .contenido p {
-    font-size: 18px;
-    color: black;
-  }
-  .footer {
-    grid-area: footer;
-  }
-}
-@media screen and (max-width: 480px) {
-  .containerHistoria {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "titulo"
-      "nav"
-      "contenido"
-      "footer";
-  }
-  .titulo {
-    grid-area: titulo;
-  }
-  .titulo h1 {
-    font-size: 30px;
-  }
-  .nav {
-    grid-area: nav;
-  }
-  .nav ul {
-    flex-direction: column;
-    font-size: 27px;
-  }
-  .contenido {
-    grid-area: contenido;
-    background-color: rgb(95, 95, 95);
-  }
-  .contenido p {
-    font-size: 16px;
-    color: rgb(189, 156, 11);
-  }
-  .footer {
-    grid-area: footer;
-  }
-}
 body{
     background-color: $colorPrincipal;
 }
@@ -113,22 +10,26 @@ body{
     flex-direction: row;
     justify-content: center; 
     h1{
-        font-size: 60px;
-        color: gold;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-align: center;
+      font-size: 55px;
+      color: yellow; 
     }
   }
-.header{
-  @extend .header;
-  background-color: $colorTerciario;
-}  
+.parrafos {
+  width: 85%;
+  text-align: center;
+  font-size: map-get($map: $parrafos, $key: tFuente);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0;
+  color: yellow;
+}
 .menuIndex {
     color: yellow;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background: black;
     font-size: 35px;
@@ -142,8 +43,17 @@ body{
         color: gold;
     }
 }
+.divIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenInd{
+  width: 65%;
+  height: auto;
+  display: flex;
+}
 .mainHist{
-    background-color: maroon;
     h2{
         text-align: center;
         font-size: map-get($map: $titulos, $key: tH2);
@@ -151,18 +61,14 @@ body{
         padding-top: 23px;
     }
     p{
+        margin: auto;
+        width: 80%;
         padding: 8px;
         font-size: map-get($map: $parrafos, $key: tFuente);
-        font-weight: 600;
+        font-weight: 300;
         text-align: map-get($map: $parrafos, $key: tAlign);
         color: map-get($map: $parrafos, $key: cFuente);
-        &:hover{
-            color: red;
-        }
     }
-}
-.imgHist{
-  @include fotoSize(auto,1200px)
 }
 .contenidoFooter{
     display: flex;
@@ -172,6 +78,60 @@ body{
     justify-content: space-around;
     h4{
         color: gold;
-      font-size: map-get($map: $titulos, $key: tH4);
+      font-size: 22px;
     }
+}
+.logoRaton {
+  width: 255px;
+  height: 205px;
+}
+.imagenHist {
+  width: 65%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+.redesSociales{
+  color: gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 20px;
+    padding-top: 56px;
+    margin-right: 39px;
+    color: yellow; 
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  color: yellow;
+}
+h3 {
+  color: yellow;
+  text-align: center;
+  font-size: 45px;
+  padding: 30px;
+}
+h4 {
+  text-align: center;
+  color: yellow;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(black, orange);
+  padding-top: 50px;
+}
+.galeriaFoto {
+  width: 30%;
+  padding: 10px;
+  margin: auto;
 }

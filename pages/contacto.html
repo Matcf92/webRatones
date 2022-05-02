@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ratones, paranoicos, rock, historia, discografia, juanse, memi, sarco, argentina, musica">
     <meta name="description" content="Queres tener a los Ratones en tu evento? Entra y contactanos">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--<link rel="stylesheet" href="../css/estilos.css">-->
     <title>Ratones Paranoicos Contacto</title>
 </head>
-<body class="bodyContacto">
-    <header class="header">
-        <img src="../images/logo.jpg" alt="logo">
-        <h1>Ratones Paranoicos</h1>
+<body class="container-fluid">
+    <header class="row header">
+        <img class="logoRaton col-sm-12 col-md-6 col-xl-6" src="../images/logo.jpg" alt="logo">
+        <h1 class="tituloDisco col-sm-12 col-md-6 col-xl-6">Ratones Paranoicos</h1>
     </header>
-    <nav>
-        <ul class="menuIndex">
+    <nav class="row">
+        <ul class="menuIndex col-12">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="historia.html">Historia</a></li>
             <li><a href="discografia.html">Discografia</a></li>
@@ -23,14 +25,14 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <div class="infoContacto">
+    <div class="infoContacto row">
         <h2>Por contrataciones</h2>
-        <p>Whatsapp: +5411 2543-2503</p>
-        <p>Tel: 011 4773 3108</p>
-        <p>Mail: contrataciones@robertoramasso.com.ar</p>
+        <p class="parrafos">Whatsapp: +5411 2543-2503</p>
+        <p class="parrafos">Tel: 011 4773 3108</p>
+        <p class="parrafos lead">contrataciones@robertoramasso.com.ar</p>
     </div>
     <h3>Llená el siguiente formulario y nos comunicaremos a la brevedad</h3>
-    <div class="formContacto">
+    <div class="formContacto row">
         <form action="">
             <label class="controls" for="nombre">Nombre:</label>
             <input class="controls" type="text" placeholder="Nombre" name="nombre">
@@ -45,15 +47,16 @@
         </form>
     </div>
     <footer>
-        <div class="footer">
+        <div class="row footerAll">
             <footer class="contenidoFooter">
-              <h4>Todos los derechos Reservados. Ratones Paranoicos 2022</h4>
-              <div class="redesSociales">
+              <h4 class="col-sm-6 col-md-6 col-xl-6">Todos los derechos Reservados. Ratones Paranoicos 2022.</h4>
+              <div class="col-sm-6 col-md-6 col-xl-6 redesSociales">
                 <h4>Seguinos:</h4>
                 <a href="https://www.facebook.com/ratonesparanoicos"><img src="../images/facebook.png" width="40px" height="40px" class="iconFacebook"></a>
               </div>
             </footer>
           </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
