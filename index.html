@@ -18,10 +18,39 @@
 <body>
   <div class="container-fluid">
     <div class="header row">
-      <img src="images/logo.jpg" class="logoRaton col-sm-12 col-md-6 col-xl-6" alt="logo">
+      <!--<img src="images/logo.jpg" class="logoRaton col-sm-12 col-md-6 col-xl-6" alt="logo">-->
       <h1 class="tituloDisco col-sm-12 col-md-6 col-xl-6">Ratones Paranoicos</h1>
     </div>
-    <div class="navIndex">
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning fs-2" href="#"> <img src="images/logo.jpg" alt="Logo" width="135px"
+            height="135px" class="d-inline-block align-text-center "></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active fs-3" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="pages/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="pages/discografia.html">Discografia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--<div class="navIndex">
       <nav>
         <ul class="menuIndex">
           <li><a href="index.html">Inicio</a></li>
@@ -31,7 +60,7 @@
           <li><a href="pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>
-    </div>
+    </div>-->
     <div class="divIndex container-fluid">
       <main>
         <div class="caja1 row">
@@ -56,7 +85,7 @@
           </div>
           <div class="divIndex col-sm-12 col-md-12 col-xl-6">
             <h2>Gira 2022-23</h2>
-            <img src="images/nuevo.jpg" class="imagenInd img-fluid img-thumbnail" alt="Imagen de la gira" />
+            <img src="images/nuevo.jpg" class="imagenHist img-fluid img-thumbnail" alt="Imagen de la gira" />
             <p class="parrafos">
               Los Ratones Paranoicos acaban de retornar de España y Estados Unidos y preparan su concierto en el Famoso
               Luna Park en la Capital de Buenos Aires, Argentina. Los Ratones Paranoicos llamaron "Los chicos quieren
@@ -101,7 +130,7 @@
           </div>
           <div class="divIndex col-sm-12 col-md-12 col-xl-6">
             <h2>Titulo</h2>
-            <img src="images/merchandise.jpg" class="imagenInd img-fluid img-thumbnail" alt="merchandise">
+            <img src="images/merchandise.jpg" class="imagenHist img-fluid img-thumbnail" alt="merchandise">
             <p class="parrafos">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto saepe quam quisquam optio repellendus
               tempore sunt, mollitia animi labore inventore hic delectus nesciunt corporis, laudantium, minus voluptas
@@ -123,7 +152,6 @@
           <a href="https://www.facebook.com/ratonesparanoicos"><img src="images/facebook.png" width="40px" height="40px"
               class="iconFacebook"></a>
         </div>
-
       </footer>
     </div>
     <script src="js/bootstrap.min.js"></script>
