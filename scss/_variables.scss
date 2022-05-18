@@ -2,20 +2,20 @@ $colorPrincipal: black;
 $colorSecundario: gold;
 $colorTerciario: darkgrey;
 
-$parrafos:(
-    tFuente: 19px,
-    cFuente: gold,
-    tAlign: center,
+$parrafos: (
+  tFuente: 18px,
+  cFuente: gold,
+  tAlign: center,
 );
 
-$titulos:(
-    tH1: 60px,
-    tH2: 50px,
-    tH3: 40px,
-    tH4: 30px,
+$titulos: (
+  tH1: 60px,
+  tH2: 50px,
+  tH3: 40px,
+  tH4: 30px,
 );
 
-@mixin fotoSize($height, $width){
-    height: $height;
-    width: $width;
+@mixin fotoSize($height, $width) {
+  height: $height;
+  width: $width;
 }

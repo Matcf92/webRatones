@@ -72,14 +72,6 @@ h4 {
   text-align: center;
   color: yellow;
 }
-.menuIndex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background: black;
-  font-size: 40px;
-  list-style: none;
-}
 .menuIndex:hover{
   font-size: 52px;
 }
@@ -132,10 +124,6 @@ ul li{
   padding: 10px;
   margin: auto;
 }
-.galeriaFoto:hover{
-  width: 40%;
-  margin: auto;
-}
 .redesSociales{
   display: flex;
   flex-direction: column;
@@ -145,10 +133,6 @@ ul li{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.imagenDisco{
-  width: 700px;
-  height: 620px;
 }
 .contDisco{
   display: flex;

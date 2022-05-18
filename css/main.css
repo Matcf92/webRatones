@@ -6,7 +6,7 @@
   .seccionDisco p {
     color: gold;
     text-align: center;
-    font-size: 19px; }
+    font-size: 18px; }
 
 .contDisco {
   display: flex;
@@ -20,14 +20,19 @@
     margin: auto; }
 
 .infoContacto {
-  background-image: url("../images/banner.jpg");
+  height: 540px;
+  width: fit-content;
+  margin: auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: round;
+  background-position: revert;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: space-around; }
 
 .formContacto {
   background-color: black;
-  width: 500px;
+  width: 470px;
   height: 465px;
   margin: auto;
   text-align: center;
@@ -53,7 +58,7 @@ body {
   display: flex;
   justify-content: center; }
   .header h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "IM Fell Double Pica SC", serif;
     text-align: center;
     font-size: 69px;
     color: yellow; }
@@ -61,37 +66,20 @@ body {
 .parrafos {
   width: 85%;
   text-align: center;
-  font-size: 19px;
+  font-size: 18px;
   padding-top: 20px;
   padding-bottom: 19px;
   margin: 0;
   color: yellow; }
-
-.menuIndex {
-  color: yellow;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background: black;
-  font-size: 35px;
-  list-style: none;
-  text-decoration: none; }
-  .menuIndex:hover {
-    font-size: 40px; }
-  .menuIndex a {
-    text-decoration: none;
-    color: gold; }
 
 .divIndex {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.imagenInd {
-  width: 65%;
-  height: auto;
-  display: flex; }
+.contenidoHist {
+  display: flex;
+  margin: auto; }
 
 .mainHist h2 {
   text-align: center;
@@ -103,42 +91,44 @@ body {
   margin: auto;
   width: 80%;
   padding: 8px;
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 18px;
   text-align: center;
   color: gold; }
 
 .mainHist img {
-  width: 64%;
-  height: auto;
+  width: 58%;
+  height: 650px;
   display: flex;
   margin: auto; }
 
 .contenidoFooter {
   display: flex;
-  background-color: #363636;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  align-items: center;
+  justify-content: center;
+  height: 110px; }
   .contenidoFooter h4 {
     color: gold;
     font-size: 22px; }
 
 .logoRaton {
-  width: 255px;
-  height: 205px; }
+  width: 140px;
+  height: 110px; }
 
-.imagenHist {
+.imagenIndex {
   width: 50%;
   height: auto;
   display: flex;
   margin: auto; }
 
 .redesSociales {
+  width: 400px;
   color: gold;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -150,14 +140,15 @@ h1 {
   color: yellow; }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "IM Fell Double Pica SC", serif;
   text-align: center;
-  font-size: 50px;
+  font-size: 49px;
   padding-top: 50px;
   padding-bottom: 25px;
   color: yellow; }
 
 h3 {
+  font-family: "IM Fell Double Pica SC", serif;
   color: yellow;
   text-align: center;
   font-size: 45px;
@@ -167,18 +158,9 @@ h4 {
   text-align: center;
   color: yellow; }
 
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  background: linear-gradient(black, orange);
-  padding-top: 50px; }
-  .galeria img {
-    width: 30%;
-    padding: 10px;
-    margin: auto; }
-
 .galeriaImg {
-  width: 100%; }
+  width: 100%;
+  height: -webkit-fill-available; }
 
 .grid-container {
   display: grid;
