@@ -6,53 +6,9 @@
 body {
   background-color: black;
 }
-@media(max-width:768px){
-  body{
-    background-color: darkgray;
-  }
-  .headerDisco{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  ul li a{
-    font-size: 30px;
-  }
-}
-@media(max-width:576px){
-  body{
-    background-color: darkgray;
-  }
-  ul li a{
-    font-size: 25px;
-  }
-  .headerDisco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .logoRaton {
   width: 255px;
   height: 205px;
-}
-.tituloDisco{
-  text-align: left;
-}
-h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-    text-align: center;
-    font-size: 60px;
-    padding-bottom: 20px;
-    padding-top: 56px;
-    margin-right: 39px;
-    color: yellow;
 }
 h2 {
   font-family: "Times New Roman", Times, serif;
@@ -82,12 +38,6 @@ ul li a {
 ul li{
   text-decoration: none;
 }
-.imagenIndex {
-  width: 575px;
-  height: 600px;
-  display: flex;
-  margin: auto;
-}
 .parrafos {
   text-align: center;
   font-size: 19px;
@@ -99,14 +49,6 @@ ul li{
 /**.parrafos:hover{
   font-size: 22px;
 }**/
-.parrafos__historia {
-  text-align: center;
-  border-bottom: solid;
-  font-size: 21px;
-  padding: 25px;
-  margin: auto;
-  color: yellow;
-}
 .parrafosContacto {
   text-align: left;
   font-size: 24px;
