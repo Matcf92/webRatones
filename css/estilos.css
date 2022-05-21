@@ -46,26 +46,6 @@ ul li{
   margin: 0;
   color: yellow;
 }
-/**.parrafos:hover{
-  font-size: 22px;
-}**/
-.parrafosContacto {
-  text-align: left;
-  font-size: 24px;
-  padding: 50px;
-  color: yellow;
-}
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  background: linear-gradient(black, orange);
-  padding-top: 50px;
-}
-.galeriaFoto {
-  width: 30%;
-  padding: 10px;
-  margin: auto;
-}
 .redesSociales{
   display: flex;
   flex-direction: column;
@@ -82,38 +62,3 @@ ul li{
   align-items: center;
   width: 950px;
 } 
-.infoContacto {
-  text-align: center;
-  color: yellow;
-  font-size: 50px;
-  font-weight: 200;
-  padding-top: 100px;
-  padding-bottom: 150px;
-}
-.infoContacto h2 {
-  font-size: 57px;
-}
-.formContacto {
-  background-color: orangered;
-  width: 370px;
-  height: 465px;
-  margin: auto;
-  text-align: center;
-  font-size: 27px;
-  color: yellow;
-}
-.controls {
-  display: block;
-  font-size: 22px;
-  padding: 5px;
-  border-radius: 5px;
-  margin: auto;
-}
-.footerAll{
-  background-color: currentColor;
-}
-.contenidoFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}

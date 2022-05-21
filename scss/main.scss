@@ -68,7 +68,14 @@ body {
   }
 }
 .contenidoFooter {
-  background-color: #151515;
+  width: 100%;
+  margin: auto;
+  background-color: #050505;
+  background-image: radial-gradient(
+    1000px circle at 50% 100%,
+    gold,
+    transparent 95%
+  );
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -76,10 +83,20 @@ body {
   justify-content: space-evenly;
   height: 120px;
   h4 {
-    color: gold;
+    font-weight: 400;
+    font-family: "IM Fell Double Pica SC";
+    color: black;
     font-size: 22px;
     width: auto;
   }
+}
+.redesSociales {
+  width: 400px;
+  color: gold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .logoRaton {
   width: 140px;
@@ -91,14 +108,7 @@ body {
   display: flex;
   margin: auto;
 }
-.redesSociales {
-  width: 400px;
-  color: gold;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
+
 h2 {
   font-family: "IM Fell Double Pica SC", serif;
   text-align: center;
@@ -124,19 +134,20 @@ h4 {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
   grid-auto-rows: minmax(300px, auto);
   gap: 10px;
-  padding: 10px;
+  padding: 3px;
   grid-auto-flow: dense;
-}
-.wide {
-  grid-column: span 2;
-}
-.tall {
-  grid-row: span 2;
 }
 .grid-item {
   display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
 }
+.grid-item:hover {
+  transform: scale(1.04);
+}
+
